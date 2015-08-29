@@ -1,0 +1,95 @@
+h2 {
+	color:#337ab7;
+}
+#title {
+	font-family: "Verdana";
+	font-size: 100px;
+	text-align: center;
+}
+
+.header-Img-padding {
+	margin-top: -2.6em !important;
+}
+
+img {
+	height: 600px !important;
+	width: 100% !important;
+}	
+
+.index-padding {
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+.footer {
+	background-color:BLACK;
+	text-align:center;
+	width: 100% !important;
+}
+footer p {
+	margin-left: -18% !important;
+	width: 180% !important;
+}
+
+.box {
+	
+	border-radius: 2px;
+	display: inline-block;
+	margin: 20px;
+	width: 280px;
+}
+
+.box img {
+	height: 250px !important;
+	width: 100% !important;
+}
+
+.box p {
+	font-family: Arial,Helvetica,sans-serif;
+	font-weight: bold;
+	font-size: 2em;
+	text-align: center;
+}
+
+#polity {
+	background-color: rgb(248, 248, 248);
+}
+
+.item1 {
+	left: 20px;
+	position: relative;
+	top: 20px;
+}
+
+.item2 {
+	left: 130px;
+	position: relative;
+	top: 20px;
+}
+
+.item3 {
+	left: 240px;
+	position: relative;
+	top: 20px;
+}
+.blog-top {
+	left: 253px;
+	position: relative;
+	top: 29px; 
+}
+.home-container a {
+		padding-left: 49% !important;
+		font-weight: bold;
+	}
+/*Medium devices(Desktops, 992px and up)*/
+@media(min-width: 992px) {
+	.home-container {
+		width: 75%;
+	}
+	.home-container a {
+		padding-left: 80% !important;
+	}
+	footer p {
+		margin-left: -2% !important;
+	}
+}
