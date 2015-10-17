@@ -7,6 +7,10 @@ app.config(['$routeProvider', function($routeProvider) {
         templateUrl: 'partials/blog-home.html',
         controller: 'HomeController'
       }).
+	  when('/link',{
+		templateUrl: 'partials/full-link.html',
+		controller: 'LinkController'		
+	  }).
       otherwise({
         redirectTo: '/index'
       });

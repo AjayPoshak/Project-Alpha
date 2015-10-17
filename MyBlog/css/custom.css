@@ -1,14 +1,23 @@
+@font-face {
+	font-family: blogFont;
+	src: url(fonts/glyphicons-halflings-regular.eot); /*IE9 Compatible Modes*/
+	src: url(fonts/glyphicons-halflings-regular.eot?#iefix) format('embedded-opentype'), /*IE6-IE8*/
+		 url(fonts/glyphicons-halflings-regular.woff2) format('woff2'),	/*Super Modern Browsers*/
+		 url(fonts/glyphicons-halflings-regular.woff) format('woff'),	/*Pretty Modern Browsers*/
+		 url(fonts/glyphicons-halflings-regular.ttf) format('truetype'), /*Safari, Android, iOS*/
+		 url(fonts/glyphicons-halflings-regular.svg?#svgFontName) format('svg'); /*Legacy iOS*/
+}
 h2 {
 	color:#337ab7;
 }
 #title {
-	font-family: "Verdana";
+	font-family: 'Open Sans', sans-serif;
 	font-size: 100px;
 	text-align: center;
 }
 
-.header-Img-padding {
-	margin-top: -2.6em !important;
+.container-fluid {
+	box
 }
 
 img {
@@ -16,10 +25,6 @@ img {
 	width: 100% !important;
 }	
 
-.index-padding {
-	padding-left: 1em;
-	padding-right: 1em;
-}
 
 .footer {
 	background-color:BLACK;
@@ -27,8 +32,7 @@ img {
 	width: 100% !important;
 }
 footer p {
-	margin-left: -18% !important;
-	width: 180% !important;
+	width: 100% !important;
 }
 
 .box {
@@ -45,7 +49,7 @@ footer p {
 }
 
 .box p {
-	font-family: Arial,Helvetica,sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-weight: bold;
 	font-size: 2em;
 	text-align: center;
@@ -78,9 +82,39 @@ footer p {
 	top: 29px; 
 }
 .home-container a {
-		padding-left: 49% !important;
-		font-weight: bold;
+	padding-left: 49% !important;
+	font-weight: bold;
 	}
+	
+#sideContainer {
+	padding-left: 70%;
+	padding-right: 5%;
+	padding-top: 4%;
+}
+aside {
+	border: 2px solid #0574ac;
+	border-radius: 4px;
+}
+.topAside {
+	background-color: #0574ac;
+	color: #FFFFFF;
+	/*font-family: blogFont;*/
+	font-size: 1.9em;
+	margin-top: -6%;
+	padding-left: 15%;
+	padding-top: -2%;
+}
+.bottomAside ul li {
+	list-style-type: none;
+	padding-top: 2%;
+}
+
+.page-header {
+	margin: 10px 0 20px;
+}
+.lead {
+	font-family: 'Open Sans', sans-serif;
+}
 /*Medium devices(Desktops, 992px and up)*/
 @media(min-width: 992px) {
 	.home-container {
