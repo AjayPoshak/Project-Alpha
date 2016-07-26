@@ -1,9 +1,9 @@
 //controller.js
 'use strict';
-app.controller('HomeController', function($scope,$http, $rootScope){
+app.controller('HomeController', function($scope,$http, $rootScope, blogServices){
 	console.log("Inside Home Controller...");
 	$http.get("Contents/content.json").success(function(data){
-			console.log("Inside the json data...");		
+			console.log("Inside the json data...");
 			$scope.content = data;
 		});
 	$scope.linkClick = function(clickId){
@@ -12,4 +12,8 @@ app.controller('HomeController', function($scope,$http, $rootScope){
 		console.log("Inside rootScope..."+$rootScope.pageId);
 		localStorage.setItem("PageId",$rootScope.pageId);
 	};
+	blogServices.getBlogData()
+		.then(function(response){
+			console.log(response);
+		});
 });
