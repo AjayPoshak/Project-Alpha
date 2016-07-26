@@ -1,15 +1,15 @@
-
-var app = angular.module("MyBlog",['ngRoute']);
+"use strict";
+var app = angular.module('MyBlog',['ngRoute']);
 console.log("Inside app.js...");
 app.config(['$routeProvider', function($routeProvider) {
 	$routeProvider.
       when('/index', {
-        templateUrl: 'partials/blog-home.html',
+        templateUrl: 'partials/main-page.html',
         controller: 'HomeController'
       }).
 	  when('/link',{
 		templateUrl: 'partials/full-link.html',
-		controller: 'LinkController'		
+		controller: 'LinkController'
 	  }).
       otherwise({
         redirectTo: '/index'
