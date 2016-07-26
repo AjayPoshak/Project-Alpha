@@ -1,12 +1,9 @@
-<!-- Using Parallex effect along with bootstrap for Mobile First Experience-->
-
+<!DOCTYPE html>
 <html ng-app="MyBlog">
 <title>Project Alpha</title>
-	
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
 	<!-- Bootstrap Library Files -->
 	<link rel="stylesheet" href="css/bootstrap.min.css" media="screen">
 	<link rel="stylesheet" href="css/bootstrap-theme.min.css" media="screen">
@@ -17,10 +14,10 @@
 	<script type="text/javascript" src="lib/bootstrap/jquery.min.js"></script>
 	<script type="text/javascript" src="lib/bootstrap/bootstrap.min.js"></script>
 	<!--script type="text/javascript" src="lib/bootstrap/npm.js"></script-->
-	
+
 	<!-- External Style Sheet -->
 	<link rel="stylesheet" type="text/css" href="css/custom.css">
-	
+
 	<!---Angular JS Files ---->
 	<script type="text/javascript" src="lib/angular/angular.js"></script>
 	<script type="text/javascript" src="lib/angular/angular-route.js"></script>
@@ -28,13 +25,14 @@
 	<script type="text/javascript" src="js/controllers/HomeController.js"></script>
 	<script type="text/javascript" src="js/controllers/LinkController.js"></script>
 	<script type="text/javascript" src="js/directives/section.js"></script>
+	<script type="text/javascript" src="js/services/service.js"></script>
 	<!-- endbuild -->
-	
-	
 </head>
 <body>
-	<div class="container-fluid">
-		<div ng-view></div>
-	</div>
+	<div blog-header></div>
+		<div class="container-fluid">
+			<div ng-view></div>
+		</div>
+	<div blog-footer></div>
 	</body>
 </html>
