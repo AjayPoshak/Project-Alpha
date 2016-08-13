@@ -1,5 +1,4 @@
 "use strict";
-//var sys = require('sys');
 var fs = require('fs');
 var http = require('http');
 var url = require('url');
@@ -17,8 +16,6 @@ http.createServer(function(request, response){
       break;
     case '/showData':
       dbCall.selectData();
-      // console.log(res);
-      // response.end(dbCall.selectData());
       break;
     default:
       console.log('404, Page not found');
