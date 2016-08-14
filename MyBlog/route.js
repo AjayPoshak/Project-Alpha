@@ -3,7 +3,11 @@ var fs = require('fs');
 var http = require('http');
 var url = require('url');
 var index = require('./index.js');
-
+/**
+ * Creating the server with request and response parameters
+ * request : standard request object
+ * response : standard response object
+ */
 http.createServer(function(request, response){
   response.setHeader('Access-Control-Allow-Origin', 'http://localhost');
   var url_parts = url.parse(request.url);

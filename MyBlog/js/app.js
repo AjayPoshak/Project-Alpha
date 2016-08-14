@@ -1,6 +1,9 @@
 "use strict";
 var app = angular.module('MyBlog',['ngRoute']);
-console.log("Inside app.js...");
+/**
+ * Router for the application
+ * $routeProvider : Used for configuring routes
+ */
 app.config(['$routeProvider', function($routeProvider) {
 	$routeProvider.
       when('/index', {

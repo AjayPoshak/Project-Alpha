@@ -6,6 +6,11 @@ var connection = mysql.createConnection({
      password: 'mountain',
      database : 'blog'
    });
+   /**
+    * This exports the functions to require call
+    * @param  {response} standard response type
+    * @return {rows|err}  return rows or err based on the database response
+    */
 module.exports = function(response){
   return {
     selectData: function(){

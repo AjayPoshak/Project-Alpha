@@ -1,5 +1,8 @@
 //Section.js
 "use strict";
+/**
+ * Directives for header and footer
+ */
 app.directive('blogHeader', function()
 {
 	console.log("Inside Header directive ...");
