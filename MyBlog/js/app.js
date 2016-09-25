@@ -7,10 +7,10 @@ var app = angular.module('MyBlog',['ngRoute']);
 app.config(['$routeProvider', function($routeProvider) {
 	$routeProvider.
       when('/index', {
-        templateUrl: 'partials/main-page.html',
+        templateUrl: 'partials/home-page.html',
         controller: 'HomeController'
       }).
-	  when('/link',{
+	  when('/link/:articleId',{
 		templateUrl: 'partials/full-link.html',
 		controller: 'LinkController'
 	  }).
