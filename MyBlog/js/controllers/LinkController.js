@@ -5,15 +5,22 @@
  * $http : to make http calls to backend
  * $rootScope : the parent scope
  */
-app.controller('LinkController', function($scope, $http, $rootScope){
-	$rootScope.pageId = localStorage.getItem("pageId");
-	console.log("Inside Link Controller"+$rootScope.pageId);
+app.controller('LinkController', function($scope, $http, $rootScope, $routeParams, blogServices){
+	console.log($routeParams.articleId);
 
 /**
  * this http call will retrieve the detailed content of article
  */
-	$http.get("Contents/content.json")
-		.success(function(data){
-			$scope.content = data;
-		});
+	// $http.get("Contents/content.json")
+	// 	.success(function(data){
+	// 		$scope.content = data;
+	// 	});
+	blogServices.getArticlebyId($routeParams.articleId)
+	.then(function(response){
+		console.log(response);
+		$scope.fullArticle = response.data[0];
+	})
+	.catch(function(err){
+		console.log(err);
+	});
 });
