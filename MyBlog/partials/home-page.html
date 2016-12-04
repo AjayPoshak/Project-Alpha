@@ -1,0 +1,12 @@
+<div class="home-container">
+	<section class="cards" ng-repeat="text in blogData">
+		<header>
+			<h2>{{text.articleheading}}</h2>
+		</header>
+		<article>
+			<p class="lead">
+				<span>{{text.article}}</span>
+				<a href="javascript: void(0);" ng-click="linkClick(text.articleid)">Read More>></a>
+		</article>
+	</section>
+</div>

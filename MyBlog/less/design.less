@@ -1,0 +1,126 @@
+@primary-color: #0574ac;
+@no-size: 0px;
+@margin-left: 10px;
+@margin-right: 10px;
+@margin-top: 10px;
+@margin-bottom: 10px;
+@text-top-margin: 5px;
+@text-bottom-margin: 5px;
+@footer-bg-color: #000;
+@footer-txt-color: #fff;
+@card-bg-color: #fff;
+html {
+  background-color: #000;
+}
+body {
+  margin: @no-size;
+  background-color: #f2f2f2;
+  min-height: 100vh;
+  font-family: 'Roboto', sans-serif;
+}
+.page-header {
+  margin: @no-size;
+  height: 200px;
+  display: inline-block;
+  with: 100%;
+  @media screen and (orientation: landscape) {
+    height: 390px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    height: 500px;
+  }
+  @media screen and (min-width: 1024px){
+    height: 400px;
+  }
+}
+.hide-desktop {
+  @media screen and (min-width: 1024px){
+    display: none;
+  }
+}
+.hide-mobile {
+  @media screen and (max-width: 1024px){
+    display: none;
+  }
+}
+
+.img-rounded {
+  border-radius: 6px;
+}
+.home-container {
+  margin-top: @margin-top*3 ;
+  margin-left: @margin-left;
+  margin-right: @margin-right;
+}
+
+header {
+  h2 {
+    color: @primary-color;
+    margin-top: @margin-top;
+    margin-bottom: @margin-bottom;
+    opacity: 0.7;
+  }
+}
+article {
+  p {
+      margin-top: @text-top-margin;
+      margin-bottom: @text-bottom-margin;
+      opacity: 0.6;
+  }
+}
+
+.cards {
+  background-color: @card-bg-color;
+  border-radius: 9px;
+  padding: 10px;
+  margin-top: @margin-top;
+}
+
+footer {
+  width: 100%;
+  background-color: @footer-bg-color;
+  color: @footer-txt-color;
+  /*position: absolute;*/
+  @media screen and (orientation : portrait) {
+    left: 0;
+    bottom: 0;
+  }
+  p {
+    opacity: 0.5;
+    display: block;
+  padding-left: 15vw;
+  }
+}
+.position-absolute {
+  position: absolute;
+}
+.heart {
+  background-color: red;
+  display: inline-block;
+  height: 10px;
+  margin: 0 10px;
+  position: relative;
+  top: 0;
+  transform: rotate(-45deg);
+  width: 10px;
+}
+
+.heart:before,
+.heart:after {
+  content: "";
+  background-color: red;
+  border-radius: 50%;
+  height: 10px;
+  position: absolute;
+  width: 10px;
+}
+
+.heart:before {
+  top: -6px;
+  left: 0;
+}
+
+.heart:after {
+  left: 6px;
+  top: 0;
+}
