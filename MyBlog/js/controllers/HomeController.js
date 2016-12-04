@@ -11,10 +11,6 @@
  */
 app.controller('HomeController', function($scope, $http, $rootScope, $location, blogServices){
 	console.log("Inside Home Controller...");
-	// $http.get("Contents/content.json").success(function(data){
-	// 		console.log("Inside the json data...");
-	// 		$scope.content = data;
-	// 	});
 		/**
 		 * Clicking on read more at blog will call this function
 		 * @param  {string} clickId [every click on read more link will generate a
@@ -28,8 +24,11 @@ app.controller('HomeController', function($scope, $http, $rootScope, $location, 
 		.then(function(response){
 			console.log(response);
 			$scope.blogData = response.data;
+			$rootScope.blogDataLength = ($scope.blogData.length>1)?false:true;
 		})
 		.catch(function(err){
 			console.log(err);
-		})
+		});
+
+
 });

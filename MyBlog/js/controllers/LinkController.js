@@ -19,6 +19,7 @@ app.controller('LinkController', function($scope, $http, $rootScope, $routeParam
 	.then(function(response){
 		console.log(response);
 		$scope.fullArticle = response.data[0];
+		$rootScope.blogDataLength = (response.data.length==1)?true:false;
 	})
 	.catch(function(err){
 		console.log(err);
