@@ -1,6 +1,6 @@
 # Project-Alpha
 Blog
-This is the code for my personal blog. This is created using the bootstrap and angular js.
+This is the code for my personal blog. This is created using the angular js.
 
 Content of this blog is coming from json file, which is placed on the dynamically using the angular js.
 
